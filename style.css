@@ -1,4 +1,10 @@
-/* Tailwind Configuration (for reference, processed via CDN in index.html) */
+/* Fallback colors if Tailwind config fails */
+:root {
+    --primary: #b820e6;
+    --secondary: #da7d20;
+}
+
+/* Tailwind Configuration (reference, processed via CDN) */
 /*
 @tailwind base;
 @tailwind components;
@@ -10,22 +16,6 @@
     --darkTheme: #11001F;
     --darkHover: #2a004a;
     --lightHover: #fcf4ff;
-}
-
-body {
-    font-family: 'Outfit', sans-serif;
-}
-
-.font-Ovo {
-    font-family: 'Ovo', serif;
-}
-
-.shadow-black {
-    box-shadow: 4px 4px 0 #000;
-}
-
-.shadow-white {
-    box-shadow: 4px 4px 0 #fff;
 }
 */
 
