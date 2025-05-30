@@ -1,7 +1,9 @@
 // Dark mode toggle
 function toggleTheme() {
+    console.log('Toggling theme');
     document.documentElement.classList.toggle('dark');
     localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    console.log('Theme set to:', localStorage.theme);
 }
 
 // Mobile menu toggle
@@ -16,8 +18,10 @@ function closeMenu() {
 // Set initial theme
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark');
+    console.log('Initial theme: dark');
 } else {
     document.documentElement.classList.remove('dark');
+    console.log('Initial theme: light');
 }
 
 // Animate skill bars when scrolled to
