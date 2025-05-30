@@ -1,0 +1,48 @@
+/* Tailwind Configuration (for reference, processed via CDN in index.html) */
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #b820e6;
+    --secondary: #da7d20;
+    --darkTheme: #11001F;
+    --darkHover: #2a004a;
+    --lightHover: #fcf4ff;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.font-Ovo {
+    font-family: 'Ovo', serif;
+}
+
+.shadow-black {
+    box-shadow: 4px 4px 0 #000;
+}
+
+.shadow-white {
+    box-shadow: 4px 4px 0 #fff;
+}
+*/
+
+.skill-bar {
+    transition: width 1.5s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.certificate-card {
+    transition: all 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
