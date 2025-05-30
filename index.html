@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KONDEPUDI NAGA SAI ESWAR | Full Stack Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#b820e6',
+                        secondary: '#da7d20',
+                        darkTheme: '#11001F',
+                        darkHover: '#2a004a',
+                        lightHover: '#fcf4ff'
+                    },
+                    fontFamily: {
+                        Outfit: ["Outfit", "sans-serif"],
+                        Ovo: ["Ovo", "serif"]
+                    },
+                    boxShadow: {
+                        'black': '4px 4px 0 #000',
+                        'white': '4px 4px 0 #fff',
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +51,7 @@
             <li><a href="#contact" class="hover:text-primary dark:hover:text-secondary transition">Contact</a></li>
         </ul>
         <div class="flex items-center gap-4">
-            <button onclick="toggleTheme()" aria-label="Toggle dark mode">
+            <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
                 <i class="fas fa-moon text-xl dark:hidden"></i>
                 <i class="fas fa-sun text-xl hidden dark:block"></i>
             </button>
@@ -278,7 +302,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-16 px-4 sm:px-8 lg:px-16">
+    <section id="education" class="py-16 px-4 sm:px-8 lg:px-6">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-Ovo">Education</h2>
             <div class="space-y-6 max-w-3xl mx-auto">
@@ -290,7 +314,7 @@
                             <p class="text-gray-600 dark:text-gray-300">VSM College of Engineering</p>
                         </div>
                         <div class="mt-4 md:mt-0">
-                            <p class="text-gray-600 dark:text-gray-300">2018 - 2022</p>
+                            <p class="text-gray-600 dark:text-gray-300">2018–2022</p>
                             <p class="font-semibold">CGPA: 6.7</p>
                         </div>
                     </div>
@@ -302,7 +326,7 @@
                             <p class="text-gray-600 dark:text-gray-300">Aditya Junior College</p>
                         </div>
                         <div class="mt-4 md:mt-0">
-                            <p class="text-gray-600 dark:text-gray-300">2016 - 2018</p>
+                            <p class="text-gray-600 dark:text-gray-300">2016–2018</p>
                             <p class="font-semibold">Percentage: 68%</p>
                         </div>
                     </div>
@@ -314,7 +338,7 @@
                             <p class="text-gray-600 dark:text-gray-300">Pratyusha Public School</p>
                         </div>
                         <div class="mt-4 md:mt-0">
-                            <p class="text-gray-600 dark:text-gray-300">2015 - 2016</p>
+                            <p class="text-gray-600 dark:text-gray-300">2015–2016</p>
                             <p class="font-semibold">CGPA: 9.3</p>
                         </div>
                     </div>
@@ -326,7 +350,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-16 px-4 sm:px-8 lg:px-16 bg-gray-50 dark:bg-gray-900">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-Ovo">Get In Touch</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-Ovo">Get in Touch</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
                     <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
@@ -353,10 +377,10 @@
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fab fa-linkedin text-primary dark:text-secondary mt-1 mr-4 text-xl"></i>
+                            <i class="fab fa-linkedin text-primary dark:text-secondary mt-1 text-xl mr-4"></i>
                             <div>
                                 <h4 class="font-medium">LinkedIn</h4>
-                                <a href="https://linkedin.com/in/kondepudi-naga-sai-eswar-81196724b" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-secondary">linkedin.com/in/kondepudi-naga-sai-eswar-81196724b</a>
+                                <a href="https://linkedin.com/in/kondepudi-naga-sai-eswar-81196724b" target="_blank" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-secondary">linkedin.com/in/kondepudi-naga-sai-eswar</a>
                             </div>
                         </div>
                     </div>
@@ -369,7 +393,7 @@
                             <a href="#" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-primary dark:hover:bg-secondary hover:text-white transition">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-primary dark:hover:bg-secondary hover:text-white transition">
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 hover:bg-primary dark:hover:bg-secondary hover:text-white transition">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </div>
